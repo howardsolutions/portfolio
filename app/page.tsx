@@ -1,3 +1,4 @@
+import About from '@/components/About';
 import Header from '@/components/Header';
 import SectionDivider from '@/components/SectionDivider';
 
@@ -6,7 +7,9 @@ export default function Home() {
     <div className='flex flex-col items-center px-4'>
       <Header />
       <SectionDivider />
-      <main className=''></main>
+      <main className=''>
+        <About />
+      </main>
     </div>
   );
 }
