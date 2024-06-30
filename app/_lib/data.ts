@@ -1,10 +1,14 @@
 import React from "react";
+// Icons
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+// Images
+import wildOasisWeb from "@/public/projects/wild-oasis-web.png";
+import wildOasisDashboard from "@/public/projects/wild-oasis-dashboard.png";
+import iProShopImg from "@/public/projects/ipro-shop.png";
+import messengerCloneImg from "@/public/projects/messenger-clone.png";
+import priceScraper from "@/public/projects/price-wise-scrapper.png";
 
 export const links = [
     {
@@ -66,25 +70,39 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Wild Oasis Website",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        // imageUrl: corpcommentImg,
+            "The guest website of a small hotel with authentication & reservation functionality.",
+        tags: ["Next.js", "React", "Supabase", "Tailwind"],
+        imageUrl: wildOasisWeb,
     },
     {
-        title: "rmtDev",
+        title: "Wild Oasis Dashboard",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        // imageUrl: rmtdevImg,
+            "The internal app of a Boutique Hotel, used like an internal tools for hotel Employees.",
+        tags: ["React", "Supabase", "Tailwind", "React Query", "Styled Component"],
+        imageUrl: wildOasisDashboard,
     },
     {
-        title: "Word Analytics",
+        title: "IProShop",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        // imageUrl: wordanalyticsImg,
+            "Fullstack Ecommerce website, with cart, checkout, create order, payment, admin,... functionality.",
+        tags: ["React", "NodeJS", "MongoDB", "CSS", "Express", "Zustand"],
+        imageUrl: iProShopImg,
+    },
+    {
+        title: "Messenger Clone",
+        description:
+            "A clone version of messenger, a real time chat app.",
+        tags: ["NextJS", "Typescript", "Tailwind", "Prisma", "MongoDB", "Pusher", "Zustand"],
+        imageUrl: messengerCloneImg,
+    },
+    {
+        title: "Wise Price Scrapper",
+        description:
+            "A Scraping site is designed to assist users in making informed decisions. It notifies users when a product drops in price and helps competitors by alerting them when the product is out of stock, all managed through cron jobs.",
+        tags: ["NextJS", "Typescript", "Tailwind", "Prisma", "MongoDB", "CRON"],
+        imageUrl: priceScraper,
     },
 ] as const;
 
