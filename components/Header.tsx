@@ -97,7 +97,15 @@ export default function Header() {
         </a>
         {/* Github and Linkedin Links */}
         <a
-          className='bg-white p-4 text-gray-900 flex items-center gap-2 rounded-full border border-black/10 outline-none focus:scale-110 hover:scale-[1.15]  active:scale-105 transition'
+          className='hero-social-btn'
+          href='https://howardphung.hashnode.dev/'
+          target='_blank'
+        >
+          <FaHashnode />
+        </a>
+
+        <a
+          className='hero-social-btn'
           href='https://www.linkedin.com/in/howardphung30/'
           target='_blank'
         >
@@ -105,19 +113,11 @@ export default function Header() {
         </a>
 
         <a
-          className='bg-white p-4 text-gray-900 flex items-center text-[1.35rem] gap-2 rounded-full border border-black/10 outline-none focus:scale-110 hover:scale-[1.15]  active:scale-105 transition'
+          className='hero-social-btn'
           href='https://github.com/thinhphungdev'
           target='_blank'
         >
           <FaGithubSquare />
-        </a>
-
-        <a
-          className='bg-white p-4 text-gray-900 flex items-center text-[1.35rem] gap-2 rounded-full border border-black/10 outline-none focus:scale-110 hover:scale-[1.15]  active:scale-105 transition'
-          href='https://howardphung.hashnode.dev/'
-          target='_blank'
-        >
-          <FaHashnode />
         </a>
       </motion.div>
     </header>
