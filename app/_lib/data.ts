@@ -12,6 +12,10 @@ import priceScraper from "@/public/projects/price-wise-scrapper.png";
 
 export const links = [
     {
+        name: "Home",
+        hash: "#home",
+    },
+    {
         name: "About",
         hash: "#about",
     },
@@ -30,10 +34,6 @@ export const links = [
     {
         name: "Experience",
         hash: "#experience",
-    },
-    {
-        name: "Testimonial",
-        hash: "#testimonial",
     },
     {
         name: "Contact",

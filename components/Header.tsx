@@ -7,10 +7,14 @@ import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
+import { FaHashnode } from 'react-icons/fa6';
 
 export default function Header() {
   return (
-    <header className='mb-28 mt-6 max-w-[50rem] text-center sm:mb-0 sm:mt-0'>
+    <header
+      id='home'
+      className='mb-28 mt-6 max-w-[50rem] text-center sm:mb-0 sm:mt-0 scroll-mt-[100rem]'
+    >
       <div className='flex items-center justify-center'>
         {/* Self Image and Star Icon */}
         <div className='relative'>
@@ -106,6 +110,14 @@ export default function Header() {
           target='_blank'
         >
           <FaGithubSquare />
+        </a>
+
+        <a
+          className='bg-white p-4 text-gray-900 flex items-center text-[1.35rem] gap-2 rounded-full border border-black/10 outline-none focus:scale-110 hover:scale-[1.15]  active:scale-105 transition'
+          href='https://howardphung.hashnode.dev/'
+          target='_blank'
+        >
+          <FaHashnode />
         </a>
       </motion.div>
     </header>

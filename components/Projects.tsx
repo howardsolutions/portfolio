@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Projects() {
   return (
-    <section id='projects'>
+    <section id='projects' className='scroll-mt-28'>
       <SectionHeading>Latest Side Projects 🤯</SectionHeading>
       <div>
         {projectsData.map((project) => (
