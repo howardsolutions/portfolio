@@ -5,6 +5,7 @@ import React, {
   createContext,
   SetStateAction,
   Dispatch,
+  useContext,
 } from 'react';
 import { links } from '@/app/_lib/data';
 
@@ -22,6 +23,15 @@ type ActiveSectionContextType = {
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
   null
 );
+
+export const useActiveSection = () => {
+  const context = useContext(ActiveSectionContext);
+
+  if (!context)
+    throw new Error('ActiveSectionContext was used outside Provider');
+
+  return context;
+};
 
 export default function ActiveSectionContextProvider({
   children,

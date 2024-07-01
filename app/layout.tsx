@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import Nav from '@/components/Nav';
+import ActiveSectionContextProvider from '@/context/ActiveSectionContext';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -40,8 +41,10 @@ export default function RootLayout({
         ></div>
 
         {/* MAIN CONTENT */}
-        <Nav />
-        {children}
+        <ActiveSectionContextProvider>
+          <Nav />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
