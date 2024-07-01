@@ -1,10 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
 
 export default function About() {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
     <motion.section
       //   ref={ref}
@@ -13,6 +15,7 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id='about'
+      ref={sectionRef}
     >
       <SectionHeading>About me 🙋</SectionHeading>
       <p className='mb-3'>

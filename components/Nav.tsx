@@ -1,10 +1,14 @@
 'use client';
 
 import { links } from '@/app/_lib/data';
+import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Nav() {
+  const [activeSection, setActiveSection] = useState('Home');
+
   return (
     <nav className='z-[999] relative'>
       <motion.div
@@ -30,19 +34,34 @@ export default function Nav() {
           {links.map((link) => {
             return (
               <motion.li
-                className='h-3/4 flex items-center justify-center'
+                className='h-3/4 flex items-center justify-center relative'
                 key={link.hash}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
               >
                 <Link
-                  className='flex w-full px-3 py-3 items-center justify-center
-                    hover:text-gray-950
-                    transition
-                  '
+                  className={clsx(
+                    'flex w-full px-3 py-3 items-center justify-centerhover:text-gray-950 transition',
+                    {
+                      'text-gray-950': activeSection === link.name,
+                    }
+                  )}
+                  onClick={() => setActiveSection(link.name)}
                   href={link.hash}
                 >
                   {link.name}
+                  {/* Active Background */}
+                  {link.name === activeSection && (
+                    <motion.span
+                      layoutId='activeSection'
+                      transition={{
+                        type: 'spring',
+                        stiffness: 380,
+                        damping: 30,
+                      }}
+                      className='bg-gray-100 rounded-full absolute inset-0 -z-10'
+                    ></motion.span>
+                  )}
                 </Link>
               </motion.li>
             );
