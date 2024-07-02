@@ -17,6 +17,8 @@ export default function Nav() {
         border border-white border-opacity-40 bg-white bg-opcity-80 shadow-lg shadow-black/[0.03]
         backdrop-blur-[0.5rem]
         sm:top-6 sm:h-[3.5rem] sm:w-[48rem] sm:rounded-full
+     dark:border-black/40
+        dark:bg-opacity-75
         '
         initial={{ y: -100, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
@@ -42,9 +44,10 @@ export default function Nav() {
               >
                 <Link
                   className={clsx(
-                    'flex w-full px-3 py-3 items-center justify-centerhover:text-gray-950 transition',
+                    'flex w-full px-3 py-3 items-center justify-center hover:text-gray-950 dark:text-gray-900 transition dark:hover:text-white-400',
                     {
-                      'text-gray-950': activeSection === link.name,
+                      'text-gray-950 dark:text-gray-200':
+                        activeSection === link.name,
                     }
                   )}
                   onClick={() => {
@@ -63,7 +66,9 @@ export default function Nav() {
                         stiffness: 380,
                         damping: 30,
                       }}
-                      className='bg-gray-100 rounded-full absolute inset-0 -z-10'
+                      className='bg-gray-100 rounded-full absolute inset-0 -z-10
+                        dark:bg-gray-200
+                      '
                     ></motion.span>
                   )}
                 </Link>

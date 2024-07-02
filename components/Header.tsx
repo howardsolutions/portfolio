@@ -22,7 +22,8 @@ export default function Header() {
     <header
       ref={ref}
       id='home'
-      className='section-container mb-28 mt-6 text-center sm:mb-0 sm:mt-0 scroll-mt-[100rem]'
+      className='section-container mb-28 mt-6 text-center sm:mb-0 sm:mt-0 scroll-mt-[100rem]
+      '
     >
       <div className='flex items-center justify-center'>
         {/* Self Image and Star Icon */}
@@ -102,6 +103,7 @@ export default function Header() {
         <a
           className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition
           border border-black/10
+          dark:bg-white/10
           '
           href='/dummy.pdf'
           download={true}

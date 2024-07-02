@@ -44,10 +44,12 @@ export default function Skills() {
               rounded-full outline-none hover:scale-125 transition !transform
              has-tooltip
              relative
+             dark:bg-white/10 
+             dark:text-white/90
             '
           >
             {skill.icon}
-            <span className='text-xs tooltip bg-blue-200 p-[1px] left-1/2 top-1/2 -translate-y-[240%] -translate-x-1/2 rounded absolute'>
+            <span className='text-xs tooltip bg-blue-200 dark:bg-white/80 dark:text-white p-[1px] left-1/2 top-1/2 -translate-y-[240%] -translate-x-1/2 rounded absolute'>
               {skill.label}
             </span>
           </motion.li>
