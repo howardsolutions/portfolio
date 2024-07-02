@@ -48,7 +48,7 @@ type ServiceCardProps = {
 function ServiceCard({ icon, header, description }: ServiceCardProps) {
   return (
     <article
-      className='flex group flex-col bg-white dark:bg-black/[0.8] shadow-md hover:bg-slate-800 hover:text-white transition-all duration-500 rounded-lg w-full p-6 overflow-hidden
+      className='flex group flex-col bg-white dark:bg-black/[0.8] shadow-md hover:bg-slate-800 transition duration-500 hover:translate-y-6 rounded-lg w-full p-6 overflow-hidden
   sm:w-[18rem]
 '
     >
@@ -56,7 +56,7 @@ function ServiceCard({ icon, header, description }: ServiceCardProps) {
         {React.cloneElement(icon, {
           className: 'text-[3rem] group-hover:text-white',
         })}
-        <h3 className='text-center px-2 pb-5 text-2xl font-semibold'>
+        <h3 className='text-center px-2 pb-5 text-2xl font-semibold group-hover:text-white'>
           {header}
         </h3>
       </div>
