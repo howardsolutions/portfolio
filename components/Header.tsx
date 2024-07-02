@@ -1,17 +1,23 @@
 'use client';
 
-import Image from 'next/image';
+import useSectionInView from '@/hooks';
 import imgOfMe from '@/public/me.png';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaHashnode } from 'react-icons/fa6';
+import { HiDownload } from 'react-icons/hi';
 
 export default function Header() {
+  const { ref } = useSectionInView({
+    sectionName: 'Home',
+  });
+
   return (
     <header
+      ref={ref}
       id='home'
       className='mb-28 mt-6 max-w-[50rem] text-center sm:mb-0 sm:mt-0 scroll-mt-[100rem]'
     >
@@ -64,7 +70,7 @@ export default function Header() {
         </span>{' '}
         with{' '}
         <span className='font-bold'>
-          {new Date().getFullYear() - 2019} years
+          {new Date().getFullYear() - 2020} years
         </span>{' '}
         of experiences. Welcome to my site ✋
       </motion.h1>

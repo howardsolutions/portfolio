@@ -1,13 +1,14 @@
 'use client';
 
 import { links } from '@/app/_lib/data';
+import { useActiveSection } from '@/context/ActiveSectionContext';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Nav() {
-  const [activeSection, setActiveSection] = useState('Home');
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSection();
 
   return (
     <nav className='z-[999] relative'>
@@ -46,7 +47,10 @@ export default function Nav() {
                       'text-gray-950': activeSection === link.name,
                     }
                   )}
-                  onClick={() => setActiveSection(link.name)}
+                  onClick={() => {
+                    setTimeOfLastClick(Date.now());
+                    setActiveSection(link.name);
+                  }}
                   href={link.hash}
                 >
                   {link.name}

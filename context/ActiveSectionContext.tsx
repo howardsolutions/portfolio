@@ -18,6 +18,8 @@ type ActiveSectionContextProviderProps = {
 type ActiveSectionContextType = {
   activeSection: string;
   setActiveSection: Dispatch<SetStateAction<SectionName>>;
+  timeOfLastClick: number;
+  setTimeOfLastClick: Dispatch<SetStateAction<number>>;
 };
 
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
@@ -37,11 +39,16 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>('Home');
+  // Need to keep track of this to disable the Observer temporarily when user clicks on a link
+  const [timeOfLastClick, setTimeOfLastClick] = useState(0);
+
   return (
     <ActiveSectionContext.Provider
       value={{
         activeSection,
         setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
       }}
     >
       {children}

@@ -1,14 +1,19 @@
 'use client';
 
 import { projectsData } from '@/app/_lib/data';
-import SectionHeading from './SectionHeading';
-import React, { useRef } from 'react';
-import Image from 'next/image';
+import useSectionInView from '@/hooks';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
+import React, { useRef } from 'react';
+import SectionHeading from './SectionHeading';
 
 export default function Projects() {
+  const { ref } = useSectionInView({
+    sectionName: 'Projects',
+  });
+
   return (
-    <section id='projects' className='scroll-mt-28'>
+    <section ref={ref} id='projects' className='scroll-mt-28'>
       <SectionHeading>Latest Side Projects 🤯</SectionHeading>
       <div>
         {projectsData.map((project) => (
