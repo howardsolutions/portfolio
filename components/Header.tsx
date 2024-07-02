@@ -19,7 +19,7 @@ export default function Header() {
     <header
       ref={ref}
       id='home'
-      className='mb-28 mt-6 max-w-[50rem] text-center sm:mb-0 sm:mt-0 scroll-mt-[100rem]'
+      className='section-container mb-28 mt-6 text-center sm:mb-0 sm:mt-0 scroll-mt-[100rem]'
     >
       <div className='flex items-center justify-center'>
         {/* Self Image and Star Icon */}
@@ -66,11 +66,12 @@ export default function Header() {
       >
         Hi there! <span className='font-bold'>I'm Howard,</span> a{' '}
         <span className='font-bold'>
-          full-stack Software Engineer specialized in Frontend Engineering
+          full-stack <br /> Software Engineer specialized in Frontend
+          Engineering
         </span>{' '}
         with{' '}
         <span className='font-bold'>
-          {new Date().getFullYear() - 2020} years
+          {new Date().getFullYear() - 2020}+ years
         </span>{' '}
         of experiences. Welcome to my site ✋
       </motion.h1>

@@ -1,19 +1,22 @@
 import About from '@/components/About';
+import Experience from '@/components/Experience';
 import Header from '@/components/Header';
 import Projects from '@/components/Projects';
 import SectionDivider from '@/components/SectionDivider';
 import Skills from '@/components/Skills';
+import React from 'react';
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center px-4'>
+    <React.Fragment>
       <Header />
       <SectionDivider />
       <main className=''>
         <About />
         <Projects />
         <Skills />
+        <Experience />
       </main>
-    </div>
+    </React.Fragment>
   );
 }

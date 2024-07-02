@@ -1,10 +1,10 @@
 import React from "react";
 // Icons
-import { CgWorkAlt } from "react-icons/cg";
+import { CgPerformance, CgWorkAlt } from "react-icons/cg";
 import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGithub } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiJest, SiMongodb, SiPrisma, SiReactquery, SiRedux, SiStorybook, SiSupabase, SiTypescript, SiVite, SiWebpack } from "react-icons/si";
+import { SiExpress, SiGithubactions, SiJest, SiMongodb, SiPrisma, SiReactquery, SiRedux, SiStorybook, SiSupabase, SiTypescript, SiVite, SiWebpack } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { GrGraphQl } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -15,6 +15,8 @@ import wildOasisDashboard from "@/public/projects/wild-oasis-dashboard.png";
 import iProShopImg from "@/public/projects/ipro-shop.png";
 import messengerCloneImg from "@/public/projects/messenger-clone.png";
 import priceScraper from "@/public/projects/price-wise-scrapper.png";
+import { IoAccessibilityOutline } from "react-icons/io5";
+import { MdOutlineEngineering } from "react-icons/md";
 
 export const links = [
     {
@@ -34,12 +36,12 @@ export const links = [
         hash: "#skills",
     },
     {
-        name: "Services",
-        hash: "#services",
-    },
-    {
         name: "Experience",
         hash: "#experience",
+    },
+    {
+        name: "Services",
+        hash: "#services",
     },
     {
         name: "Contact",
@@ -201,4 +203,20 @@ export const skillsData = [
         label: "Framer-Motion",
         icon: React.createElement(TbBrandFramerMotion)
     },
+    {
+        label: "Github-Actions",
+        icon: React.createElement(SiGithubactions)
+    },
+    {
+        label: "Performance",
+        icon: React.createElement(CgPerformance)
+    },
+    {
+        label: "Accessibility",
+        icon: React.createElement(IoAccessibilityOutline)
+    },
+    {
+        label: "Software-Engineering",
+        icon: React.createElement(MdOutlineEngineering)
+    }
 ] as const;
