@@ -1,5 +1,6 @@
 'use client';
 
+import { useActiveSection } from '@/context/ActiveSectionContext';
 import useSectionInView from '@/hooks';
 import imgOfMe from '@/public/me.png';
 import { motion } from 'framer-motion';
@@ -14,6 +15,8 @@ export default function Header() {
   const { ref } = useSectionInView({
     sectionName: 'Home',
   });
+
+  const { setActiveSection, setTimeOfLastClick } = useActiveSection();
 
   return (
     <header
@@ -86,6 +89,10 @@ export default function Header() {
         <Link
           className='group bg-gray-900 flex text-white px-7 py-3 rounded-full gap-2 items-center outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
           href='#contact'
+          onClick={() => {
+            setActiveSection('Contact');
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Let's work together
           <BsArrowRight className='opacity-70 group-hover:translate-x-1' />
