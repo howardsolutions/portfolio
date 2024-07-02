@@ -10,11 +10,14 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+import { useTheme } from '@/context/ThemeContext';
 
 export default function Experience() {
   const { ref } = useSectionInView({
     sectionName: 'Experience',
   });
+
+  const { theme } = useTheme();
 
   return (
     <section

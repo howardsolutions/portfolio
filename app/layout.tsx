@@ -6,6 +6,7 @@ import ActiveSectionContextProvider from '@/context/ActiveSectionContext';
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/Footer';
 import ThemeSwitch from '@/components/ThemeSwitch';
+import ThemeContextProvider from '@/context/ThemeContext';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -46,14 +47,16 @@ export default function RootLayout({
         ></div>
 
         {/* MAIN CONTENT */}
-        <ActiveSectionContextProvider>
-          <Nav />
-          {children}
-          <Footer />
-          <Toaster position='top-right' />
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Nav />
+            {children}
+            <Footer />
+            <Toaster position='top-right' />
+          </ActiveSectionContextProvider>
 
-        <ThemeSwitch />
+          <ThemeSwitch />
+        </ThemeContextProvider>
       </body>
     </html>
   );

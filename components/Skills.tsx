@@ -49,7 +49,7 @@ export default function Skills() {
             '
           >
             {skill.icon}
-            <span className='text-xs tooltip bg-blue-200 dark:bg-white/80 dark:text-white p-[1px] left-1/2 top-1/2 -translate-y-[240%] -translate-x-1/2 rounded absolute'>
+            <span className='text-xs tooltip bg-blue-200 dark:bg-blue-400 dark:text-white p-[1px] left-1/2 top-1/2 -translate-y-[240%] -translate-x-1/2 rounded absolute'>
               {skill.label}
             </span>
           </motion.li>

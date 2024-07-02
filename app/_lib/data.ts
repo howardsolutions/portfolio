@@ -108,7 +108,7 @@ export const projectsData = [
     {
         title: "Wise Price Scrapper",
         description:
-            "A Scraping site is designed to assist users in making informed decisions. It notifies users when a product drops in price and helps competitors by alerting them when the product is out of stock, all managed through cron jobs.",
+            "A Scraping site, designed to assist users making informed decisions. Notifies users when a product drops in price. Helps competitors by alerting them when the product is out of stock, managed through cron jobs.",
         tags: ["NextJS", "Typescript", "Tailwind", "Prisma", "MongoDB", "CRON"],
         imageUrl: priceScraper,
     },
