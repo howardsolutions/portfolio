@@ -4,6 +4,7 @@ import { skillsData } from '@/app/_lib/data';
 import SectionHeading from './SectionHeading';
 import useSectionInView from '@/hooks';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -30,7 +31,7 @@ export default function Skills() {
     >
       <SectionHeading>My Skills 😎</SectionHeading>
 
-      <ul className='flex flex-wrap gap-4 text-lg text-gray-800'>
+      <ul className='flex flex-wrap gap-6 text-gray-800 text-2xl'>
         {skillsData.map((skill, idx) => (
           <motion.li
             variants={fadeInAnimationVariants}
@@ -38,10 +39,17 @@ export default function Skills() {
             whileInView='animate'
             viewport={{ once: true }}
             custom={idx}
-            className='bg-white border border-black/[0.1] rounded-xl py-3 px-5'
             key={skill.label}
+            className='bg-white border border-black/[0.1] py-3 px-5 
+              rounded-full outline-none hover:scale-125 transition !transform
+             has-tooltip
+             relative
+            '
           >
             {skill.icon}
+            <span className='text-xs tooltip bg-blue-200 p-[1px] left-1/2 top-1/2 -translate-y-[240%] -translate-x-1/2 rounded absolute'>
+              {skill.label}
+            </span>
           </motion.li>
         ))}
       </ul>

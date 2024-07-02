@@ -190,7 +190,7 @@ export const skillsData = [
         icon: React.createElement(SiWebpack)
     },
     {
-        label: "React Query",
+        label: "React-Query",
         icon: React.createElement(SiReactquery)
     },
     {
@@ -198,7 +198,7 @@ export const skillsData = [
         icon: React.createElement(SiStorybook)
     },
     {
-        label: "Framer Motion",
+        label: "Framer-Motion",
         icon: React.createElement(TbBrandFramerMotion)
     },
 ] as const;
