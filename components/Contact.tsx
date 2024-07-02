@@ -30,7 +30,9 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact Me For Work</SectionHeading>
+      <SectionHeading>
+        Have a project that requires technical expertise?
+      </SectionHeading>
 
       <p className='text-gray-700 -mt-6 dark:text-white/80'>
         Please contact me directly at{' '}

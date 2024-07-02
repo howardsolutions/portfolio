@@ -4,6 +4,7 @@ import Experience from '@/components/Experience';
 import Header from '@/components/Header';
 import Projects from '@/components/Projects';
 import SectionDivider from '@/components/SectionDivider';
+import Services from '@/components/Services';
 import Skills from '@/components/Skills';
 import React from 'react';
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Experience />
+        <Services />
         <Contact />
       </main>
     </React.Fragment>
