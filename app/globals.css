@@ -10,6 +10,12 @@ html {
   box-sizing: border-box;
 }
 
+@layer base {
+  .section-container {
+    @apply px-4 mx-auto max-w-[62rem]
+  }
+}
+
 @layer components {
   .hero-social-btn {
     @apply bg-white p-4 text-gray-900 text-[1.35rem] outline-none flex items-center gap-2 rounded-full border border-black/10 focus:scale-110 hover:scale-[1.15] active:scale-105 transition;
@@ -25,7 +31,7 @@ html {
 }
 
 @layer utilities {
-  .section-container {
-    @apply px-4 mx-auto max-w-[62rem]
+  .borderBlack {
+    @apply border border-black/10;
   }
 }
