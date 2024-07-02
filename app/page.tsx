@@ -2,6 +2,7 @@ import About from '@/components/About';
 import Header from '@/components/Header';
 import Projects from '@/components/Projects';
 import SectionDivider from '@/components/SectionDivider';
+import Skills from '@/components/Skills';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className=''>
         <About />
         <Projects />
+        <Skills />
       </main>
     </div>
   );

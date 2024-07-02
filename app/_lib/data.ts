@@ -1,8 +1,14 @@
 import React from "react";
 // Icons
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGithub } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiExpress, SiJest, SiMongodb, SiPrisma, SiReactquery, SiRedux, SiStorybook, SiSupabase, SiTypescript, SiVite, SiWebpack } from "react-icons/si";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { GrGraphQl } from "react-icons/gr";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandFramerMotion } from "react-icons/tb";
 // Images
 import wildOasisWeb from "@/public/projects/wild-oasis-web.png";
 import wildOasisDashboard from "@/public/projects/wild-oasis-dashboard.png";
@@ -107,23 +113,92 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Git",
-    "Tailwind",
-    "Prisma",
-    "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
-    "Express",
-    "PostgreSQL",
-    "Python",
-    "Django",
-    "Framer Motion",
+    {
+        label: "HTML",
+        icon: React.createElement(FaHtml5)
+    },
+    {
+        label: "CSS",
+        icon: React.createElement(FaCss3)
+    },
+    {
+        label: "JavaScript",
+        icon: React.createElement(IoLogoJavascript)
+    },
+    {
+        label: "TypeScript",
+        icon: React.createElement(SiTypescript)
+    },
+    {
+        label: "React",
+        icon: React.createElement(FaReact)
+    },
+    {
+        label: "Next.js",
+        icon: React.createElement(RiNextjsFill)
+    },
+    {
+        label: "Node.js",
+        icon: React.createElement(FaNodeJs)
+    },
+    {
+        label: "Tailwind",
+        icon: React.createElement(RiTailwindCssFill)
+    },
+    {
+        label: "Prisma",
+        icon: React.createElement(SiPrisma)
+    },
+    {
+        label: "Git",
+        icon: React.createElement(FaGithub)
+    },
+    {
+        label: "MongoDB",
+        icon: React.createElement(SiMongodb)
+    },
+    {
+        label: "Supabase",
+        icon: React.createElement(SiSupabase)
+    },
+    {
+        label: "Redux",
+        icon: React.createElement(SiRedux)
+    },
+    {
+        label: "GraphQL",
+        icon: React.createElement(GrGraphQl)
+    },
+    {
+        label: "Express",
+        icon: React.createElement(SiExpress)
+    },
+    {
+        label: "PostgreSQL",
+        icon: React.createElement(BiLogoPostgresql)
+    },
+    {
+        label: "Jest",
+        icon: React.createElement(SiJest)
+    },
+    {
+        label: "Vite",
+        icon: React.createElement(SiVite)
+    },
+    {
+        label: "Webpack",
+        icon: React.createElement(SiWebpack)
+    },
+    {
+        label: "React Query",
+        icon: React.createElement(SiReactquery)
+    },
+    {
+        label: "Storybook",
+        icon: React.createElement(SiStorybook)
+    },
+    {
+        label: "Framer Motion",
+        icon: React.createElement(TbBrandFramerMotion)
+    },
 ] as const;
