@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import Nav from '@/components/Nav';
 import ActiveSectionContextProvider from '@/context/ActiveSectionContext';
+import { Toaster } from 'react-hot-toast';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Nav />
           {children}
+          <Toaster position='top-right' />
         </ActiveSectionContextProvider>
       </body>
     </html>

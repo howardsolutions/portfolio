@@ -22,7 +22,7 @@ export default function Experience() {
       ref={ref}
       className='scroll-mt-28 mb-28 sm:mb-40 section-container'
     >
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>My experience 🧑‍💻</SectionHeading>
       <VerticalTimeline lineColor=''>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
