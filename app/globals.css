@@ -67,6 +67,10 @@ html.dark {
   .borderBlack {
     @apply border border-black/10;
   }
+  
+  .high-light {
+    background-color: #ffd54f;
+  }
 }
 
 /* Splide customization */
@@ -80,6 +84,7 @@ html.dark {
   background-color: #fff;
   padding: 3rem 1.875rem;
   border-radius: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.05);
   gap: 3rem;
 }
 

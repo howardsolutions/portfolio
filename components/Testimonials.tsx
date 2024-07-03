@@ -48,13 +48,13 @@ const Testimonials = () => {
                 <p className='text'>{review.text}</p>
                 <div className=''>
                   <div className='rating'>
-                    <span className='star'>&#9733;</span>
-                    <span className='star'>&#9733;</span>
-                    <span className='star'>&#9733;</span>
-                    <span className='star'>&#9733;</span>
-                    <span className='star'>&#9733;</span>
+                    {Array.from({ length: 5 }).map((val, idx) => (
+                      <span key={idx} className='star'>
+                        &#9733;
+                      </span>
+                    ))}
                   </div>
-                  <p className='user'>{review.name}</p>
+                  <p className='user dark:text-black/70'>{review.name}</p>
                 </div>
               </div>
             </SplideSlide>

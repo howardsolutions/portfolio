@@ -68,16 +68,25 @@ export default function Header() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi there! <span className='font-bold'>I'm Howard,</span> a{' '}
+        Hi there! <span className='font-bold'>I'm Howard,</span> <br />
         <span className='font-bold'>
-          full-stack <br /> Software Engineer specialized in Frontend
-          Engineering
+          a Software Engineer
         </span>{' '}
         with{' '}
         <span className='font-bold'>
           {new Date().getFullYear() - 2020}+ years
         </span>{' '}
-        of experiences. Welcome to my site ✋
+        of experiences. <br />
+        The author of{' '}
+        <a
+          className='underline font-semibold'
+          href='https://howardphung.hashnode.dev/'
+          target='_blank'
+        >
+          Web Dev Distilled Blog
+        </a>
+        . <br />
+        Welcome to my site ✋
       </motion.h1>
 
       {/* Social Links, Linkedin and CV */}

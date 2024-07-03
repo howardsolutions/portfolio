@@ -56,8 +56,10 @@ type ServiceCardProps = {
 function ServiceCard({ icon, header, description }: ServiceCardProps) {
   return (
     <article
-      className='flex group flex-col bg-white dark:bg-black/[0.8] shadow-md hover:bg-slate-800 transition duration-500 hover:translate-y-6 rounded-lg w-full p-6 overflow-hidden
+      className='flex group flex-col bg-white dark:bg-black/[0.8] hover:bg-slate-800 transition duration-500 hover:translate-y-6 rounded-lg w-full p-6 overflow-hidden
   sm:w-[18rem]
+  shadow-2xl
+  border border-black/5
 '
     >
       <div className='flex flex-col items-center gap-2'>

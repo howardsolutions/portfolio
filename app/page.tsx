@@ -14,7 +14,7 @@ export default function Home() {
     <React.Fragment>
       <Header />
       <SectionDivider />
-      <main className=''>
+      <main>
         <About />
         <Projects />
         <Skills />

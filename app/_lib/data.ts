@@ -227,7 +227,7 @@ export const testimonialsData = [
         image:
             'https://media.licdn.com/dms/image/C5603AQHzEHP2A1vn1A/profile-displayphoto-shrink_800_800/0/1664276127152?e=1725494400&v=beta&t=lMOen522_co6out4Zej1--W8a-eRjFKmSYYO4_GQJAM',
         name: 'Dung Nguyen - Backend Team Leader',
-        text: 'I have worked with Howard as a software developer and can attest to their coding and technical skills. Howard is highly skilled in Javascript Framework and has consistently developed high-quality, scalable software solutions for our team. Howard works well in a team and can effectively communicate technical information to non-technical stakeholders.Really sad when to leave this wonderful team and cannot have opportunity to work with Howard anymore but still recommended anyone to work with him!',
+        text: 'I have worked with Howard as a software developer and can attest his coding and technical skills. Howard is highly skilled in Javascript Framework and has consistently developed high-quality, scalable software solutions for our team. Howard works well in a team and can effectively communicate technical information to non-technical stakeholders.Really sad when to leave this wonderful team and cannot have opportunity to work with Howard anymore but still recommended anyone to work with him!',
     },
     {
         id: 2,
