@@ -51,7 +51,7 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Senior Frontend Engineer",
+        title: "Senior Frontend Software Engineer",
         company: "UK Parking Control",
         description:
             "",
@@ -67,7 +67,7 @@ export const experiencesData = [
         date: "11-12/2023",
     },
     {
-        title: "Middle Front-End Engineer",
+        title: "Middle Front-End Software Engineer",
         company: "Setel.com",
         description:
             "",

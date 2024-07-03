@@ -10,8 +10,11 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.2)
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+
+  /* Creating animations for dark mode */
+  transition: background-color 0.3s, border 0.3s;
 }
 
 @layer base {
