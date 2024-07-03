@@ -220,3 +220,41 @@ export const skillsData = [
         icon: React.createElement(MdOutlineEngineering)
     }
 ] as const;
+
+export const testimonialsData = [
+    {
+        id: 1,
+        image:
+            'https://media.licdn.com/dms/image/C5603AQHzEHP2A1vn1A/profile-displayphoto-shrink_800_800/0/1664276127152?e=1725494400&v=beta&t=lMOen522_co6out4Zej1--W8a-eRjFKmSYYO4_GQJAM',
+        name: 'Dung Nguyen - Backend Team Leader',
+        text: 'I have worked with Howard as a software developer and can attest to their coding and technical skills. Howard is highly skilled in Javascript Framework and has consistently developed high-quality, scalable software solutions for our team. Howard works well in a team and can effectively communicate technical information to non-technical stakeholders.Really sad when to leave this wonderful team and cannot have opportunity to work with Howard anymore but still recommended anyone to work with him!',
+    },
+    {
+        id: 2,
+        image:
+            'https://media.licdn.com/dms/image/D5635AQEZzsgZXoTcVw/profile-framedphoto-shrink_800_800/0/1686352811576?e=1720584000&v=beta&t=mCxI7kK1lYtoajP4lLaax_7a1nI5F3erSE_LBIZmWtM',
+        name: 'Long Nguyen - Solution Architecture',
+        text: 'I worked directly with Howard Phung as a Team leader and Solution architecture at UK Parking Control project. I was impressed by his vast knowledge on Frontend development and his motivation to constantly improve and learn new things, he always try the best to figure out the efficient way to innovate and make frontend applications in the organization better and more performance. He has highly skilled with JavaScript, React, Vite, Tailwind CSS and consistently developed high-quality, scalable frontend solutions for our applications. I really hope we will work together in the future, he is a great asset to a development project.',
+    },
+    {
+        id: 3,
+        image:
+            'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'Alex Johnson',
+        text: 'The attention to detail in their work is impressive. Every aspect of the project was handled with precision and care. I highly recommend their services.',
+    },
+    {
+        id: 4,
+        image:
+            'https://plus.unsplash.com/premium_photo-1671823917954-dc943c1bd9df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'Emily Davis',
+        text: 'The team demonstrated a deep understanding of my requirements. They were able to capture the essence of my vision and deliver a product that exceeded my expectations.',
+    },
+    {
+        id: 5,
+        image:
+            'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: 'David Miller',
+        text: "The product not only met but exceeded my expectations. It's clear that the team is dedicated to delivering high-quality work. I'm a satisfied customer.",
+    },
+] as const;

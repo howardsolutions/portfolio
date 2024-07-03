@@ -18,15 +18,23 @@ html.dark {
   .section-container {
     @apply px-4 mx-auto max-w-[62rem]
   }
+
+  .slider-container {
+    position: relative;
+    user-select: none;
+    padding-inline: 1rem;
+  }
 }
 
 @layer components {
+  /* HERO SECTION BUTTONS */
   .hero-social-btn {
     @apply bg-white p-4 text-gray-900 text-[1.35rem] outline-none flex items-center gap-2 rounded-full border border-black/10 focus:scale-110 hover:scale-[1.15] active:scale-105 transition
     dark:bg-white/10 dark:text-white/60
     ;
   }
 
+  /* TOOLTIP */
   .tooltip {
     @apply invisible absolute;
   }
@@ -34,10 +42,122 @@ html.dark {
   .has-tooltip:hover .tooltip {
     @apply visible z-50
   }
+
+  /* TESTIMONIALS STYLING */
+  .slider-container .quote {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .slider-container .top-quote {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+  }
+  
+  .slider-container .bottom-quote {
+    position: absolute;
+    bottom: -3rem;
+    right: -0.5rem;
+    transform: rotate(180deg);
+  }
 }
 
 @layer utilities {
   .borderBlack {
     @apply border border-black/10;
+  }
+}
+
+/* Splide customization */
+.splide__track {
+  border-radius: 1rem;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem 1.875rem;
+  border-radius: 1rem;
+  gap: 3rem;
+}
+
+.slider-container .content .text {
+  color: #484646;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.slider-container .content .rating {
+  display: inline-block;
+  line-height: 1;
+}
+
+.slider-container .content .star {
+  color: #ff6f59;
+  font-size: 1.1rem;
+}
+
+.slider-container .content .user {
+  font-weight: 600;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #ff6f59 !important;
+}
+
+.splide__arrow {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #505050;
+  font-weight: 300;
+}
+
+.splide__arrow--prev {
+  top: 50%;
+  left: -5.5rem !important;
+}
+
+.splide__arrow--next {
+  top: 50%;
+  right: -5.5rem !important;
+}
+
+.splide__pagination__page {
+  height: 10px;
+  width: 10px;
+  opacity: 1;
+}
+
+/* Media Query */
+@media (max-width: 1188px) {
+  .splide__slide {
+    display: block;
+    text-align: center;
+  }
+
+  .splide__arrow {
+    font-size: 1.5rem;
+  }
+
+  .splide__arrow--prev {
+    left: -0.75rem !important;
+  }
+
+  .splide__arrow--next {
+    right: -0.75rem !important;
+  }
+
+  .slider-container .bottom-quote {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .splide__arrow{
+    display: none !important;
   }
 }

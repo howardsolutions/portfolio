@@ -1,13 +1,21 @@
+'use client';
+
 import { HiOutlineComputerDesktop } from 'react-icons/hi2';
 import SectionHeading from './SectionHeading';
 import { FaServer } from 'react-icons/fa';
 import { SiCodementor } from 'react-icons/si';
 import React, { ReactElement } from 'react';
 import { IconType } from 'react-icons';
+import useSectionInView from '@/hooks';
 
 export default function Services() {
+  const { ref } = useSectionInView({
+    sectionName: 'Services',
+  });
+
   return (
     <section
+      ref={ref}
       id='services'
       className='section-container justify-center items-center mb-28 sm:mb-40 scroll-mt-28'
     >
