@@ -8,6 +8,7 @@ import HighLight from './HighLight';
 export default function About() {
   const { ref } = useSectionInView({
     sectionName: 'About',
+    threshold: 0.75,
   });
 
   return (

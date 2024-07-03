@@ -5,6 +5,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import Image from 'next/image';
 import SectionHeading from './SectionHeading';
+import { useTheme } from '@/context/ThemeContext';
 
 const Testimonials = () => {
   return (
@@ -35,7 +36,7 @@ const Testimonials = () => {
           }}
         >
           {testimonialsData.map((review) => (
-            <SplideSlide key={review.id}>
+            <SplideSlide className='dark:!bg-white/10' key={review.id}>
               <Image
                 className='object-cover rounded-full h-[140px] w-[140px] mb-4'
                 src={review.image}
@@ -45,7 +46,7 @@ const Testimonials = () => {
                 height={140}
               />
               <div className='content'>
-                <p className='text'>{review.text}</p>
+                <p className='text dark:!text-white/60'>{review.text}</p>
                 <div className=''>
                   <div className='rating'>
                     {Array.from({ length: 5 }).map((val, idx) => (
@@ -54,7 +55,7 @@ const Testimonials = () => {
                       </span>
                     ))}
                   </div>
-                  <p className='user dark:text-black/70'>{review.name}</p>
+                  <p className='user dark:!text-white/60'>{review.name}</p>
                 </div>
               </div>
             </SplideSlide>
