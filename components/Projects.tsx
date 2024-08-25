@@ -9,7 +9,7 @@ import ProjectCard from './ProjectCard';
 export default function Projects() {
   const { ref } = useSectionInView({
     sectionName: 'Projects',
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   return (

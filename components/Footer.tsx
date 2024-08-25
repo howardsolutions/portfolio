@@ -9,7 +9,7 @@ export default function Footer() {
       <p className='text-xs'>
         <span className='font-semibold'>
           Software Engineer, Frontend turned Fullstack, Love Software
-          Engineering and Computer Science. Also love building UI at scale.
+          Engineering, Computer Science, and building UI at scale.
         </span>
       </p>
     </footer>

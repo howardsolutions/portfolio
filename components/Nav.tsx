@@ -17,7 +17,7 @@ export default function Nav() {
         border border-white border-opacity-40 bg-white bg-opcity-80 shadow-lg shadow-black/[0.03]
         backdrop-blur-[0.5rem]
         sm:top-6 sm:h-[3.5rem] sm:w-[48rem] sm:rounded-full
-     dark:border-black/40
+      dark:border-black/40
         dark:bg-opacity-75
         '
         initial={{ y: -100, x: '-50%', opacity: 0 }}
