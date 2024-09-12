@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "howard-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,7 @@
     "@react-email/components": "^0.0.20",
     "@react-email/tailwind": "^0.0.18",
     "@splidejs/react-splide": "^0.7.12",
-    "@types/node": "20.14.9",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.19",
-    "clsx": "^2.1.1",
-    "eslint": "8.57.0",
     "eslint-config-next": "14.2.4",
     "framer-motion": "^11.2.12",
     "next": "14.2.4",
@@ -29,10 +24,16 @@
     "react-intersection-observer": "^9.10.3",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^0.16.0",
-    "tailwindcss": "3.4.4",
+    "sharp": "^0.33.5",
     "typescript": "5.5.2"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "clsx": "^2.1.1",
+    "eslint": "8.57.0",
+    "tailwindcss": "3.4.4"
   }
 }

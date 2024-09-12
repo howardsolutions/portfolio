@@ -50,11 +50,6 @@ export default function About() {
           Performance to gain seamless and efficient user experiences.{' '}
         </p>
         <p>
-          🔵 Using <HighLight>Typescript</HighLight> to ensure building
-          readable, maintainable, bug-free applications, which could lead to so
-          much better developer experience.{' '}
-        </p>
-        <p>
           🔵 Proficient in setting up <HighLight>build tools</HighLight> such as
           <HighLight>Vite</HighLight> for complex projects.{' '}
         </p>
@@ -78,15 +73,6 @@ export default function About() {
           people. Do <HighLight> peer coding reviews </HighLight> to help
           teammates improve code quality and improve my{' '}
           <HighLight> technical communication</HighLight>
-        </p>
-        <p>
-          🔵 Been learning and try to be really good at JS{' '}
-          <HighLight>Functional Programming</HighLight>, Frontend and Backend
-          <HighLight>System Design</HighLight>, UI UX Design, automation
-          end-to-end testing with Cypress, MicroServices with Nodejs,... the
-          list go on and on. I'm always try to{' '}
-          <HighLight> staying up-to-date</HighLight> with the industry trends,
-          in order to bring the best value I could to the companies.
         </p>
       </article>
 

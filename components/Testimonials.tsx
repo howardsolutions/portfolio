@@ -5,7 +5,6 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import Image from 'next/image';
 import SectionHeading from './SectionHeading';
-import { useTheme } from '@/context/ThemeContext';
 
 const Testimonials = () => {
   return (

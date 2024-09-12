@@ -1,6 +1,6 @@
 import React from "react";
 // Icons
-import { CgPerformance, CgWorkAlt } from "react-icons/cg";
+import { CgPerformance } from "react-icons/cg";
 import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGithub } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { IoLogoJavascript } from "react-icons/io";
@@ -113,13 +113,6 @@ export const projectsData = [
             "A clone version of messenger, a real time chat app.",
         tags: ["NextJS", "Typescript", "Tailwind", "Prisma", "MongoDB", "Pusher", "Zustand"],
         imageUrl: messengerCloneImg,
-    },
-    {
-        title: "Wise Price Scrapper",
-        description:
-            "A Scraping site, designed to assist users making informed decisions. Notifies users when a product drops in price. Helps competitors by alerting them when the product is out of stock, managed through cron jobs.",
-        tags: ["NextJS", "Typescript", "Tailwind", "Prisma", "MongoDB", "CRON"],
-        imageUrl: priceScraper,
     },
 ] as const;
 
