@@ -1,10 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Montserrat } from 'next/font/google';
 import Nav from '@/components/Nav';
 import ActiveSectionContextProvider from '@/context/ActiveSectionContext';
 import { Toaster } from 'react-hot-toast';
-import Footer from '@/components/Footer';
+const Footer = dynamic(() => import('@/components/Footer'));
 import ThemeSwitch from '@/components/ThemeSwitch';
 import ThemeContextProvider from '@/context/ThemeContext';
 

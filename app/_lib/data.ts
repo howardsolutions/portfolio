@@ -1,20 +1,18 @@
 import React from "react";
 // Icons
-import { CgPerformance } from "react-icons/cg";
-import { FaReact, FaHtml5, FaCss3, FaNodeJs, FaGithub } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiGithubactions, SiJest, SiMongodb, SiPrisma, SiReactquery, SiRedux, SiStorybook, SiSupabase, SiTypescript, SiVite, SiWebpack } from "react-icons/si";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { GrGraphQl } from "react-icons/gr";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { CgPerformance } from "react-icons/cg";
+import { FaCss3, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { GrGraphQl } from "react-icons/gr";
+import { IoLogoJavascript } from "react-icons/io";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiGithubactions, SiJest, SiMongodb, SiPrisma, SiReactquery, SiRedux, SiStorybook, SiSupabase, SiTypescript, SiVite, SiWebpack } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 // Images
-import wildOasisWeb from "@/public/projects/wild-oasis-web.png";
-import wildOasisDashboard from "@/public/projects/wild-oasis-dashboard.png";
 import iProShopImg from "@/public/projects/ipro-shop.png";
 import messengerCloneImg from "@/public/projects/messenger-clone.png";
-import priceScraper from "@/public/projects/price-wise-scrapper.png";
+import wildOasisDashboard from "@/public/projects/wild-oasis-dashboard.png";
+import wildOasisWeb from "@/public/projects/wild-oasis-web.png";
 import { IoAccessibilityOutline } from "react-icons/io5";
 import { MdOutlineEngineering } from "react-icons/md";
 
@@ -92,6 +90,7 @@ export const projectsData = [
             "The guest website of a small hotel with authentication & reservation functionality.",
         tags: ["Next.js", "React", "Supabase", "Tailwind"],
         imageUrl: wildOasisWeb,
+        githubSrc: 'https://github.com/howardsolutions/wild-oasis-web',
     },
     {
         title: "Wild Oasis Dashboard",
@@ -99,6 +98,7 @@ export const projectsData = [
             "The internal app of a Boutique Hotel, used like an internal tools for hotel Employees.",
         tags: ["React", "Supabase", "Tailwind", "React Query", "Styled Component"],
         imageUrl: wildOasisDashboard,
+        githubSrc: 'https://github.com/howardsolutions/wild-oasis-dashboard',
     },
     {
         title: "IProShop",
@@ -106,6 +106,7 @@ export const projectsData = [
             "Fullstack Ecommerce website, with cart, checkout, create order, payment, admin,... functionality.",
         tags: ["React", "NodeJS", "MongoDB", "CSS", "Express", "Zustand"],
         imageUrl: iProShopImg,
+        githubSrc: 'https://github.com/howardsolutions/mern-pro-shop',
     },
     {
         title: "Messenger Clone",
@@ -113,6 +114,7 @@ export const projectsData = [
             "A clone version of messenger, a real time chat app.",
         tags: ["NextJS", "Typescript", "Tailwind", "Prisma", "MongoDB", "Pusher", "Zustand"],
         imageUrl: messengerCloneImg,
+        githubSrc: 'https://github.com/howardsolutions/messenger-clone',
     },
 ] as const;
 
@@ -243,20 +245,13 @@ export const testimonialsData = [
         image:
             'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'Alex Johnson',
-        text: 'The attention to detail in their work is impressive. Every aspect of the project was handled with precision and care. I highly recommend their services.',
+        text: 'The attention to detail in his work is impressive. Every aspect of the project was handled with precision and care. I highly recommend their services.',
     },
     {
         id: 4,
         image:
-            'https://plus.unsplash.com/premium_photo-1671823917954-dc943c1bd9df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Emily Davis',
-        text: 'The team demonstrated a deep understanding of my requirements. They were able to capture the essence of my vision and deliver a product that exceeded my expectations.',
-    },
-    {
-        id: 5,
-        image:
             'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'David Miller',
-        text: "The product not only met but exceeded my expectations. It's clear that the team is dedicated to delivering high-quality work. I'm a satisfied customer.",
+        text: "The product not only met but exceeded my expectations. It's clear that he is dedicated to delivering high-quality work. I'm a satisfied customer.",
     },
 ] as const;

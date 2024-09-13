@@ -17,11 +17,13 @@ const Testimonials = () => {
             className='top-quote quote'
             src='blockquote.svg'
             alt='top quote'
+            loading='lazy'
           />
           <img
             className='bottom-quote quote'
             src='blockquote.svg'
             alt='bottom quote'
+            loading='lazy'
           />
         </blockquote>
 
@@ -38,6 +40,7 @@ const Testimonials = () => {
             <SplideSlide className='dark:!bg-white/10' key={review.id}>
               <Image
                 className='object-cover rounded-full h-[140px] w-[140px] mb-4'
+                loading='lazy'
                 src={review.image}
                 alt='Testimonial'
                 quality={80}

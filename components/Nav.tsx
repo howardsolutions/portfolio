@@ -55,6 +55,7 @@ export default function Nav() {
                     setActiveSection(link.name);
                   }}
                   href={link.hash}
+                  prefetch={false}
                 >
                   {link.name}
                   {/* Active Background */}

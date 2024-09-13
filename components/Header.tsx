@@ -71,13 +71,14 @@ export default function Header() {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
           }}
+          prefetch={false}
         >
           Let's work together
           <BsArrowRight className='opacity-70 group-hover:translate-x-1' />
         </Link>
 
         {/* CV Download */}
-        <a
+        {/* <a
           className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition
           border border-black/10
           dark:bg-white/10
@@ -87,7 +88,7 @@ export default function Header() {
         >
           My CV{' '}
           <HiDownload className='group-hover:translate-y-0.5 opacity-60' />
-        </a>
+        </a> */}
         {/* Github and Linkedin Links */}
         <a
           className='hero-social-btn'

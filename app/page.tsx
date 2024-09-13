@@ -1,4 +1,5 @@
-import About from '@/components/About';
+import dynamic from 'next/dynamic';
+const About = dynamic(() => import('@/components/About'));
 import Contact from '@/components/Contact';
 import Experience from '@/components/Experience';
 import Header from '@/components/Header';
@@ -7,11 +8,11 @@ import SectionDivider from '@/components/SectionDivider';
 import Services from '@/components/Services';
 import Skills from '@/components/Skills';
 import Testimonials from '@/components/Testimonials';
-import React from 'react';
+import { Fragment } from 'react';
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <Fragment>
       <Header />
       <SectionDivider />
       <main>
@@ -23,6 +24,6 @@ export default function Home() {
         <Testimonials />
         <Contact />
       </main>
-    </React.Fragment>
+    </Fragment>
   );
 }

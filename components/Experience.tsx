@@ -11,6 +11,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import { useTheme } from '@/context/ThemeContext';
+import Image from 'next/image';
 
 export default function Experience() {
   const { ref } = useSectionInView({
@@ -47,10 +48,12 @@ export default function Experience() {
               }}
               date={item.date}
               icon={
-                <img
+                <Image
                   className='w-full h-full rounded-full object-fill overflow-hidden bg-center'
                   src={`/companies/${item.iconName}.png`}
                   alt={item.iconName}
+                  fill={true}
+                  loading='lazy'
                 />
               }
               iconStyle={{
