@@ -8,13 +8,17 @@ import { IoLogoJavascript } from "react-icons/io";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiGithubactions, SiJest, SiMongodb, SiPrisma, SiReactquery, SiRedux, SiStorybook, SiSupabase, SiTypescript, SiVite, SiWebpack } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { IoAccessibilityOutline } from "react-icons/io5";
+import { MdOutlineEngineering } from "react-icons/md";
+
 // Images
 import iProShopImg from "@/public/projects/ipro-shop.png";
 import messengerCloneImg from "@/public/projects/messenger-clone.png";
 import wildOasisDashboard from "@/public/projects/wild-oasis-dashboard.png";
 import wildOasisWeb from "@/public/projects/wild-oasis-web.png";
-import { IoAccessibilityOutline } from "react-icons/io5";
-import { MdOutlineEngineering } from "react-icons/md";
+
+import dungNguyen from "@/public/testimonial/dung-nguyen.png";
+import longNguyen from "@/public/testimonial/long-nguyen.png";
 
 export const links = [
     {
@@ -228,15 +232,13 @@ export const skillsData = [
 export const testimonialsData = [
     {
         id: 1,
-        image:
-            'https://media.licdn.com/dms/image/C5603AQHzEHP2A1vn1A/profile-displayphoto-shrink_800_800/0/1664276127152?e=1725494400&v=beta&t=lMOen522_co6out4Zej1--W8a-eRjFKmSYYO4_GQJAM',
+        image: dungNguyen,
         name: 'Dung Nguyen - Backend Team Lead',
         text: 'I have worked with Howard as a software developer and can attest his coding and technical skills. Howard is highly skilled in Javascript Framework and has consistently developed high-quality, scalable software solutions for our team. Howard works well in a team and can effectively communicate technical information to non-technical stakeholders.Really sad when to leave this wonderful team and cannot have opportunity to work with Howard anymore but still recommended anyone to work with him!',
     },
     {
         id: 2,
-        image:
-            'https://media.licdn.com/dms/image/D5635AQEZzsgZXoTcVw/profile-framedphoto-shrink_800_800/0/1686352811576?e=1720584000&v=beta&t=mCxI7kK1lYtoajP4lLaax_7a1nI5F3erSE_LBIZmWtM',
+        image: longNguyen,
         name: 'Long Nguyen - Solution Architecture',
         text: 'I worked directly with Howard Phung as a Team leader and Solution architecture at UK Parking Control project. I was impressed by his vast knowledge on Frontend development and his motivation to constantly improve and learn new things, he always try the best to figure out the efficient way to innovate and make frontend applications in the organization better and more performance. He has highly skilled with JavaScript, React, Vite, Tailwind CSS and consistently developed high-quality, scalable frontend solutions for our applications. I really hope we will work together in the future, he is a great asset to a development project.',
     },
