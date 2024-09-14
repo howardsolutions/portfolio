@@ -1,8 +1,7 @@
 import { projectsData } from '@/app/_lib/data';
-import { useScroll, useTransform } from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { motion } from 'framer-motion';
 
 type ProjectCardProps = (typeof projectsData)[number];
 
