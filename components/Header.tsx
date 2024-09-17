@@ -8,7 +8,6 @@ import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaHashnode } from 'react-icons/fa6';
-import { HiDownload } from 'react-icons/hi';
 
 export default function Header() {
   const { ref } = useSectionInView({
@@ -54,7 +53,7 @@ export default function Header() {
         The author of{' '}
         <a
           className='underline font-semibold'
-          href='https://howardphung.hashnode.dev/'
+          href='https://blog.howardphung.com'
           target='_blank'
         >
           Web Dev Distilled Blog
@@ -93,7 +92,7 @@ export default function Header() {
         {/* Github and Linkedin Links */}
         <a
           className='hero-social-btn'
-          href='https://howardphung.hashnode.dev/'
+          href='https://blog.howardphung.com'
           target='_blank'
         >
           <FaHashnode />

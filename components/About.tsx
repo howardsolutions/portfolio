@@ -79,7 +79,7 @@ export default function About() {
       <article className='text-start leading-[2.5rem] tracking-wider'>
         🥸 <span className='italic font-semibold'> When I'm not coding</span>, I
         enjoy reading technical books, building side projects, writing{' '}
-        <a href='https://howardphung.hashnode.dev/' target='_blank'>
+        <a href='https://blog.howardphung.com' target='_blank'>
           <HighLight> Technical Blog - Web Dev Distilled</HighLight>
         </a>
         , reading more non-technical books on other topics like philosophy,

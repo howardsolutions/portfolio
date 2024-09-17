@@ -47,17 +47,6 @@ export default function Experience() {
                     : '0.4rem solid rgba(255, 255, 255, 0.5)',
               }}
               date={item.date}
-              icon={
-                <Image
-                  className='w-full h-full rounded-full object-fill overflow-hidden bg-center'
-                  src={`/companies/${item.iconName}.png`}
-                  alt={item.iconName}
-                  fill={true}
-                  quality={80}
-                  fetchPriority='low'
-                  loading='lazy'
-                />
-              }
               iconStyle={{
                 background:
                   theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
