@@ -61,14 +61,6 @@ export const experiencesData = [
         date: "12/2023 - Present",
     },
     {
-        title: "Senior Frontend Software Engineer",
-        company: "Fpt Software",
-        description:
-            "",
-        iconName: 'fsoft',
-        date: "11-12/2023",
-    },
-    {
         title: "Middle Front-End Software Engineer",
         company: "Setel.com",
         description:

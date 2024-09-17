@@ -53,6 +53,8 @@ export default function Experience() {
                   src={`/companies/${item.iconName}.png`}
                   alt={item.iconName}
                   fill={true}
+                  quality={80}
+                  fetchPriority='low'
                   loading='lazy'
                 />
               }

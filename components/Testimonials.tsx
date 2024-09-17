@@ -43,9 +43,10 @@ const Testimonials = () => {
                 loading='lazy'
                 src={review.image}
                 alt='Testimonial'
-                quality={80}
+                quality={70}
                 width={140}
                 height={140}
+                priority={false}
               />
               <div className='content'>
                 <p className='text dark:!text-white/60'>{review.text}</p>

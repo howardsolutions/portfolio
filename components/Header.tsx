@@ -31,10 +31,11 @@ export default function Header() {
             <Image
               src={imgOfMe}
               alt='Howard Phung Image'
-              width={194}
-              height={194}
+              width={164}
+              height={164}
               quality={95}
               priority={true}
+              sizes='153px'
               className='h-26 w-26 rounded-full border-[0.35rem] border-white object-cover
             shadow-xl'
             />
@@ -108,7 +109,7 @@ export default function Header() {
 
         <a
           className='hero-social-btn'
-          href='https://github.com/thinhphungdev'
+          href='https://github.com/howardsolutions'
           target='_blank'
         >
           <FaGithubSquare />
