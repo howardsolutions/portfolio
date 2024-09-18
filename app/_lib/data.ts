@@ -239,7 +239,7 @@ export const testimonialsData = [
         image:
             'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         name: 'Alex Johnson',
-        text: 'The attention to detail in his work is impressive. Every aspect of the project was handled with precision and care. I highly recommend their services.',
+        text: 'The attention to detail in his work is impressive. Every aspect of the project was handled with precision and care. I highly recommend his services.',
     },
     {
         id: 4,
