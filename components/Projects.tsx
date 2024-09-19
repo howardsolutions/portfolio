@@ -12,8 +12,6 @@ export default function Projects() {
     threshold: 0.25,
   });
 
-  console.log('project');
-
   return (
     <section
       ref={ref}
