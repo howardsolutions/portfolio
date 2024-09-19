@@ -1,7 +1,7 @@
 'use client';
 
 import { projectsData } from '@/app/_lib/data';
-import useSectionInView from '@/hooks';
+import { useSectionInView } from '@/hooks';
 import React from 'react';
 import SectionHeading from './SectionHeading';
 import ProjectCard from './ProjectCard';
@@ -11,6 +11,8 @@ export default function Projects() {
     sectionName: 'Projects',
     threshold: 0.25,
   });
+
+  console.log('project');
 
   return (
     <section

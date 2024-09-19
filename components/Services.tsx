@@ -6,7 +6,7 @@ import { FaServer } from 'react-icons/fa';
 import { SiCodementor } from 'react-icons/si';
 import React, { ReactElement } from 'react';
 import { IconType } from 'react-icons';
-import useSectionInView from '@/hooks';
+import { useSectionInView } from '@/hooks';
 
 export default function Services() {
   const { ref } = useSectionInView({
