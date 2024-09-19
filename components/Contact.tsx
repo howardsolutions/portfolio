@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-import useSectionInView from '@/hooks';
+import { useSectionInView } from '@/hooks';
 import SectionHeading from './SectionHeading';
 import SubmitBtn from './SubmitBtn';
 

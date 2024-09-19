@@ -1,7 +1,7 @@
 'use client';
 
 import { useActiveSection } from '@/context/ActiveSectionContext';
-import useSectionInView from '@/hooks';
+import { useSectionInView } from '@/hooks';
 import imgOfMe from '@/public/me.png';
 import Image from 'next/image';
 import Link from 'next/link';

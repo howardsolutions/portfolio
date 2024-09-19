@@ -2,7 +2,7 @@
 
 import { skillsData } from '@/app/_lib/data';
 import SectionHeading from './SectionHeading';
-import useSectionInView from '@/hooks';
+import { useSectionInView } from '@/hooks';
 import { motion } from 'framer-motion';
 import React from 'react';
 

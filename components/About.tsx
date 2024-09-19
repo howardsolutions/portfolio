@@ -1,6 +1,6 @@
 'use client';
 
-import useSectionInView from '@/hooks';
+import { useSectionInView } from '@/hooks';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
 import HighLight from './HighLight';
