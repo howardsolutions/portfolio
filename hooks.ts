@@ -25,5 +25,6 @@ export default function useSectionInView({ sectionName, threshold = 0.75 }: useS
 
     return {
         ref,
+        inView
     }
 }
