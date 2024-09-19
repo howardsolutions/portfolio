@@ -1,17 +1,16 @@
 'use client';
 
-import React from 'react';
+import { Fragment } from 'react';
 
 import { experiencesData } from '@/app/_lib/data';
+import { useTheme } from '@/context/ThemeContext';
 import { useSectionInView } from '@/hooks';
-import 'react-vertical-timeline-component/style.min.css';
-import SectionHeading from './SectionHeading';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { useTheme } from '@/context/ThemeContext';
-import Image from 'next/image';
+import 'react-vertical-timeline-component/style.min.css';
+import SectionHeading from './SectionHeading';
 
 export default function Experience() {
   const { ref } = useSectionInView({
@@ -29,7 +28,7 @@ export default function Experience() {
       <SectionHeading>My experience 🧑‍💻</SectionHeading>
       <VerticalTimeline lineColor=''>
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
+          <Fragment key={index}>
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
@@ -59,7 +58,7 @@ export default function Experience() {
                 {item.description}
               </p>
             </VerticalTimelineElement>
-          </React.Fragment>
+          </Fragment>
         ))}
       </VerticalTimeline>
     </section>
