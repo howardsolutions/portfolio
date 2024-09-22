@@ -16,6 +16,16 @@ export const metadata: Metadata = {
   description: `Howard Phung, a Fullstack Javascript Engineer with ${
     new Date().getFullYear() - 2019
   } years of experience, he specialized in Frontend Engineering, he built startup, medium to enterprise level software applications`,
+  authors: {
+    name: 'Howard Phung',
+    url: 'https://www.howardphung.com/',
+  },
+  keywords: [
+    'Howard Phung',
+    'Software Engineer',
+    'Fullstack Javascript Engineer',
+    'howard phung',
+  ],
 };
 
 export default function RootLayout({
